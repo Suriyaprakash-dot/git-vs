@@ -1,0 +1,17 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    background-color: bisque;
+    font-size: xx-large;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar li a{
+    /*list-style: none;*/
+    text-decoration: none;
+    color: black;
+}
+.navbar li a:hover{
+    color: rgb(17, 224, 224);
+    text-decoration: underline;
+}
