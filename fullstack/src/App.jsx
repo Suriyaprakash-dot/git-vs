@@ -9,9 +9,10 @@ import Services from './Pages/Services'
 import { Route,Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 //import './App.css'
-import State from './hooks/State'
+import State from './hooks/state'
 import Form from './hooks/form'
 import Effect from './hooks/Effect'
+import Reducer from './hooks/Reducer'
 
 function App() {
  
@@ -26,7 +27,7 @@ return (
       <Route path='/State' element={<State/>}/>
       <Route path='/Form' element={<Form/>}/>
       <Route path='/Effect' element={<Effect/>}/>
-      
+      <Route path='/Reducer' element={<Reducer/>}/>
     </Routes>
     
         
