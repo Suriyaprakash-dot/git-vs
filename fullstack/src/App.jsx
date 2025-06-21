@@ -17,7 +17,6 @@ import State from './hooks/state'
 
 function App() {
  
-
 return (
     <>
     <Navbar/>
@@ -30,8 +29,6 @@ return (
       <Route path='/Effect' element={<Effect/>}/>
       <Route path='/Reducer' element={<Reducer/>}/>
     </Routes>
-    
-        
     </>
   )
 }
