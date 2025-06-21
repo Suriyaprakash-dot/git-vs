@@ -9,10 +9,11 @@ import Services from './Pages/Services'
 import { Route,Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 //import './App.css'
-import State from './hooks/state'
-import Form from './hooks/form'
+
+import Form from './hooks/Form'
 import Effect from './hooks/Effect'
 import Reducer from './hooks/Reducer'
+import State from './hooks/state'
 
 function App() {
  
