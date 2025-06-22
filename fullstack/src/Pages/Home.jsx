@@ -1,6 +1,6 @@
 import React from 'react'
 import Welcome from '../Welcome'
-import Skills from '../skills'
+import Skills from '../Skills'
 const Home = () => {
   return (
     <div>
