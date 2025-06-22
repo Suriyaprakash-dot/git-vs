@@ -1,27 +1,22 @@
-import { useState } from "react";
-
+import React from 'react'
+import { useState } from 'react'
 const State = () => {
-  const [count, setCount] = useState(0);
-  const [sharedLikes, setSharedLikes] = useState(0);
-  const [thumbsUp, setThumbsUp] = useState(0);
-  const [thumbsDown, setThumbsDown] = useState(0);
+    const [count,setCount]=useState(0)
+    const [like,setlike]=useState(0)
+    const [dislike,setdislike]=useState(0)
 
-  const handleIncrement = () => setCount(count + 1);
-  const handleShare = () => setSharedLikes(sharedLikes + 10);
-
+    const handleIncrement=()=>{
+        setCount(count+1)
+    }
   return (
     <div>
-      <h1>Count: {count}</h1>
-      <button onClick={handleIncrement}>Increment</button>
-      <br />
-      <h1>Like and Dislike count</h1>
-      <button onClick={() => setThumbsUp(thumbsUp + 1)}>👍 {thumbsUp}</button>
-      <button onClick={() => setThumbsDown(thumbsDown + 1)}>👎 {thumbsDown}</button>
-
-      <h1>Likes: {sharedLikes}</h1>
-      <button onClick={handleShare}>Share 📤</button>
+      <h1>Count:{count}</h1>
+    <button onClick={()=>setCount(count+1)}>Increment</button>
+    <h1>Like: {like} and Dislike: {dislike}</h1>
+    <button onClick={()=>setlike(like+1)}>Like</button>
+    <button onClick={()=>setdislike(dislike+1)}>Dislike</button>
     </div>
-  );
-};
+  )
+}
 
-export default State;
+export default State
