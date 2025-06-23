@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skill Tracker</title>
+  <style>
+    body { font-family: sans-serif; margin: 40px; }
+    input, select { margin: 5px; }
+  </style>
+</head>
+<body>
+  <h2>My Skill Tracker</h2>
+  <input type="text" id="skillName" placeholder="Enter skill">
+  <input type="number" id="skillLevel" placeholder="Skill level (1-10)" min="1" max="10">
+  <button onclick="addSkill()">Add Skill</button>
+
+  <ul id="skillList"></ul>
+
+  <script>
+    const skills = [];
+
+    function addSkill() {
+      const name = document.getElementById("skillName").value;
+      const level = document.getElementById("skillLevel").value;
+      if (name && level) {
+        skills.push({ name, level });
+        renderSkills();
+      }
+    }
+
+    function renderSkills() {
+      const list = document.getElementById("skillList");
+      list.innerHTML = "";
+      skills.forEach((skill, i) => {
+        list.innerHTML += `<li>${skill.name} - Level: ${skill.level}</li>`;
+      });
+    }
+  </script>
+</body>
+</html>
